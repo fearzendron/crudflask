@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+{% block body %}
+  {% if session.logged_in %}
+    <form action="{{ url_for('add_entry') }}" method=post class=add-entry>
+      <dl>
+        <dt>Nome Completo:
+        <dd><input type=text size=30 name=full_name>
+        <dt>Nome Reduzido:
+        <dd><input type=text size=30 name=small_name>
+        <dt>Nivel de acesso:
+        <dd><input type=text size=30 name=access_level>
+        <dt>Papel:
+        <dd><input type=text size=30 name=role>
+        <dd><input type=submit value=Share>
+      </dl>
+    </form>
+  {% endif %}
+  <ul class=entries>
+  {% for entry in entries %}
+    <li><h2>{{ entry.full_name }}</h2>
+  {% else %}
+    <li><em>Unbelievable.  No entries here so far</em>
+  {% endfor %}
+  </ul>
+{% endblock %}

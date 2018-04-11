@@ -1,0 +1,13 @@
+MANIFEST.in
+rm79684/__init__.py
+rm79684/flaskr.py
+rm79684/schema.sql
+rm79684.egg-info/PKG-INFO
+rm79684.egg-info/SOURCES.txt
+rm79684.egg-info/dependency_links.txt
+rm79684.egg-info/requires.txt
+rm79684.egg-info/top_level.txt
+rm79684/static/styles.css
+rm79684/templates/layout.html
+rm79684/templates/login.html
+rm79684/templates/show_entries.html

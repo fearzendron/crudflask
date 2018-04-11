@@ -1,0 +1,3 @@
+graft rm79684/templates
+graft rm79684/static
+include rm79684/schema.sql
