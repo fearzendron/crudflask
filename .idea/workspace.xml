@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="56810c5f-a785-4279-9e0e-08ed23b53273" name="Default" comment="" />
+    <list default="true" id="56810c5f-a785-4279-9e0e-08ed23b53273" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rm79684.egg-info/PKG-INFO" beforeDir="false" afterPath="$PROJECT_DIR$/rm79684.egg-info/PKG-INFO" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rm79684/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/rm79684/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rm79684/flaskr.py" beforeDir="false" afterPath="$PROJECT_DIR$/rm79684/flaskr.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rm79684/rm79684.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rm79684/schema.sql" beforeDir="false" afterPath="$PROJECT_DIR$/rm79684/schema.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rm79684/static/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/rm79684/static/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rm79684/templates/layout.html" beforeDir="false" afterPath="$PROJECT_DIR$/rm79684/templates/layout.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rm79684/templates/show_entries.html" beforeDir="false" afterPath="$PROJECT_DIR$/rm79684/templates/show_entries.html" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -11,31 +22,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="SOURCES.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/rm79684.egg-info/SOURCES.txt">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="requires.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/rm79684.egg-info/requires.txt">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="PKG-INFO" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/rm79684.egg-info/PKG-INFO">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="dependency_links.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/rm79684.egg-info/dependency_links.txt">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/rm79684/__init__.py">
+      <file leaf-file-name="flaskr.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/rm79684/flaskr.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="19" selection-start-column="19" selection-end-column="19" />
+            <state relative-caret-position="388">
+              <caret line="99" column="37" selection-start-line="99" selection-start-column="37" selection-end-line="99" selection-end-column="37" />
+              <folding>
+                <element signature="e#25#34#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -49,23 +43,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="flaskr.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/rm79684/flaskr.py">
+      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/rm79684/__init__.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="398">
-              <caret line="66" column="93" selection-start-line="66" selection-start-column="93" selection-end-line="66" selection-end-column="93" />
-              <folding>
-                <element signature="e#25#34#0" expanded="true" />
-              </folding>
+            <state>
+              <caret column="28" selection-start-column="28" selection-end-column="28" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="layout.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/rm79684/templates/layout.html">
+      <file leaf-file-name="show_entries.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/rm79684/templates/show_entries.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="41" selection-start-line="4" selection-start-column="41" selection-end-line="4" selection-end-column="41" />
+            <state relative-caret-position="230">
+              <caret line="35" column="40" selection-start-line="35" selection-start-column="40" selection-end-line="35" selection-end-column="40" />
             </state>
           </provider>
         </entry>
@@ -74,16 +65,16 @@
         <entry file="file://$PROJECT_DIR$/rm79684/templates/login.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="195">
-              <caret line="13" column="14" lean-forward="true" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="14" />
+              <caret line="13" column="14" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="14" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="show_entries.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/rm79684/templates/show_entries.html">
+      <file leaf-file-name="layout.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/rm79684/templates/layout.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="54" selection-start-line="10" selection-start-column="54" selection-end-line="10" selection-end-column="54" />
+            <state relative-caret-position="285">
+              <caret line="19" selection-start-line="19" selection-end-line="19" />
             </state>
           </provider>
         </entry>
@@ -95,6 +86,9 @@
       <find>\{\% extends \&quot;layout\.html\&quot; \%\}\n\{\% block body \%\}\n  \{\% if session\.logged_in \%\}\n    \&lt;form action\=\&quot;\{\{ url_for\(\'add_entry\'\) \}\}\&quot; method\=post class\=add\-entry\&gt;\n      \&lt;dl\&gt;\n        \&lt;dt\&gt;Nome Completo\:\n        \&lt;dd\&gt;\&lt;input type\=text size\=30 name\=full_name\&gt;\n        \&lt;dt\&gt;Nome Reduzido\:\n        \&lt;dd\&gt;\&lt;input type\=text size\=30 name\=small_name\&gt;\n        \&lt;dt\&gt;Nivel de acesso\:\n        \&lt;dd\&gt;\&lt;input type\=text size\=30 name\=access_role\&gt;\n        \&lt;dt\&gt;Papel\:\n        \&lt;dd\&gt;\&lt;input type\=text size\=30 name\=role\&gt;\n        \&lt;dd\&gt;\&lt;input type\=submit value\=Share\&gt;\n      \&lt;\/dl\&gt;\n    \&lt;\/form\&gt;\n  \{\% endif \%\}\n  \&lt;ul class\=entries\&gt;\n  \{\% for entry in entries \%\}\n    \&lt;li\&gt;\&lt;h2\&gt;\{\{ entry\.full_name \}\}\&lt;\/h2\&gt;\n  \{\% else \%\}\n    \&lt;li\&gt;\&lt;em\&gt;Unbelievable\.  No entries here so far\&lt;\/em\&gt;\n  \{\% endfor \%\}\n  \&lt;\/ul\&gt;\n\{\% endblock \%\}</find>
     </findStrings>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -104,15 +98,16 @@
         <option value="$PROJECT_DIR$/MANIFEST.in" />
         <option value="$PROJECT_DIR$/flaskr.egg-info/top_level.txt" />
         <option value="$PROJECT_DIR$/flaskr.egg-info/requires.txt" />
-        <option value="$PROJECT_DIR$/rm79684/__init__.py" />
-        <option value="$PROJECT_DIR$/rm79684/static/styles.css" />
         <option value="$PROJECT_DIR$/setup.py" />
         <option value="$PROJECT_DIR$/setup.cfg" />
+        <option value="$PROJECT_DIR$/rm79684/templates/login.html" />
+        <option value="$PROJECT_DIR$/rm79684/static/styles.css" />
+        <option value="$PROJECT_DIR$/rm79684.egg-info/PKG-INFO" />
+        <option value="$PROJECT_DIR$/rm79684/templates/layout.html" />
+        <option value="$PROJECT_DIR$/rm79684/templates/show_entries.html" />
+        <option value="$PROJECT_DIR$/rm79684/__init__.py" />
         <option value="$PROJECT_DIR$/rm79684/schema.sql" />
         <option value="$PROJECT_DIR$/rm79684/flaskr.py" />
-        <option value="$PROJECT_DIR$/rm79684/templates/login.html" />
-        <option value="$PROJECT_DIR$/rm79684/templates/show_entries.html" />
-        <option value="$PROJECT_DIR$/rm79684/templates/layout.html" />
       </list>
     </option>
   </component>
@@ -121,6 +116,7 @@
     <option name="width" value="1400" />
     <option name="height" value="795" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -194,10 +190,10 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" weight="0.3298292" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="Python Console" />
       <window_info anchor="bottom" id="Terminal" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17638889" />
       <window_info anchor="right" id="R Packages" />
       <window_info anchor="right" id="R Graphics" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -239,20 +235,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rm79684/static/styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="56" selection-start-line="17" selection-start-column="56" selection-end-line="17" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tests/test_rm79684.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/setup.cfg">
+    <entry file="file://$PROJECT_DIR$/rm79684/static/styles.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="11" lean-forward="true" selection-start-line="1" selection-start-column="11" selection-end-line="1" selection-end-column="11" />
+        <state relative-caret-position="495">
+          <caret line="33" column="1" selection-start-line="33" selection-start-column="1" selection-end-line="33" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -260,6 +249,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/setup.cfg">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="11" lean-forward="true" selection-start-line="1" selection-start-column="11" selection-end-line="1" selection-end-column="11" />
         </state>
       </provider>
     </entry>
@@ -280,15 +276,40 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/rm79684.egg-info/PKG-INFO">
-      <provider selected="true" editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="35" selection-start-line="6" selection-start-column="35" selection-end-line="6" selection-end-column="35" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/rm79684.egg-info/dependency_links.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/rm79684/templates/layout.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rm79684/templates/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="14" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rm79684/templates/show_entries.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="35" column="40" selection-start-line="35" selection-start-column="40" selection-end-line="35" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/rm79684/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="19" selection-start-column="19" selection-end-column="19" />
+          <caret column="28" selection-start-column="28" selection-end-column="28" />
         </state>
       </provider>
     </entry>
@@ -301,32 +322,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/rm79684/flaskr.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="398">
-          <caret line="66" column="93" selection-start-line="66" selection-start-column="93" selection-end-line="66" selection-end-column="93" />
+        <state relative-caret-position="388">
+          <caret line="99" column="37" selection-start-line="99" selection-start-column="37" selection-end-line="99" selection-end-column="37" />
           <folding>
             <element signature="e#25#34#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rm79684/templates/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="14" lean-forward="true" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rm79684/templates/show_entries.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="54" selection-start-line="10" selection-start-column="54" selection-end-line="10" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rm79684/templates/layout.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="41" selection-start-line="4" selection-start-column="41" selection-end-line="4" selection-end-column="41" />
         </state>
       </provider>
     </entry>

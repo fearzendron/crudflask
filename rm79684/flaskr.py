@@ -1,4 +1,8 @@
-# center all the imports
+# Fernando Zendron - RM79684
+#
+# Aplicação foi criada usando Flask
+#
+#
 import os
 import sqlite3
 from flask import Flask, request, session, g, redirect, url_for, abort, render_template, flash
@@ -53,9 +57,33 @@ def initdb_command():
 @app.route('/')
 def show_entries():
     db = get_db()
-    cur = db.execute('select full_name, small_name, access_level, role, last_access_date, last_access_hour from users order by id desc')
+
+    search_word = str(request.args.get('search',""))
+    filter_access_level = str(request.args.get('access_level',""))
+
+    if search_word:
+        if filter_access_level:
+            print("1")
+            cur = db.execute('select id, full_name, small_name, access_level, role, last_access_date, last_access_hour '
+                             'from users where small_name LIKE ? and access_level = ?', ("%" + search_word + "%", str(filter_access_level), ))
+        else:
+            print("2")
+            cur = db.execute('select id, full_name, small_name, access_level, role, last_access_date, last_access_hour '
+                             'from users where small_name LIKE ?', ("%" + search_word + "%",))
+    else:
+        if filter_access_level:
+            print("3")
+            cur = db.execute('select * from users where access_level = ?', (str(filter_access_level),))
+        else:
+            print("4")
+            cur = db.execute('select id, full_name, small_name, access_level, role, last_access_date, last_access_hour '
+                         'from users order by id desc')
+
     users = cur.fetchall()
-    return render_template('show_entries.html', entries=users)
+    total_users = get_total_users()
+
+    return render_template('show_entries.html', entries=users, qtd_users=total_users)
+
 
 
 @app.route('/add', methods=['POST'])
@@ -63,11 +91,24 @@ def add_entry():
     if not session.get('logged_in'):
         abort(401)
     db = get_db()
-    db.execute('insert into users (full_name, small_name, access_level, role) values (?, ?, ?, ?)',
+    try:
+        db.execute('insert into users (full_name, small_name, access_level, role) values (?, ?, ?, ?)',
                  [request.form['full_name'], request.form['small_name'], request.form['access_level'], request.form['role']])
-    db.commit()
-    flash('Novo usuário adicionado')
+        db.commit()
+        flash('Novo usuário adicionado')
+    except:
+        flash('Usuário ja cadastrado!')
     return redirect(url_for('show_entries'))
+
+@app.route('/search', methods=['GET'])
+def search_entry():
+    if not session.get('logged_in'):
+        abort(401)
+    db = get_db()
+    cur = db.execute('select * from users where small_name like %?%',
+                 [request.form['search']])
+    users = cur.fetchall()
+    return render_template('show_entries.html', entries=users)
 
 @app.route('/login', methods=['GET', 'POST'])
 def login():
@@ -88,3 +129,10 @@ def logout():
     session.pop('logged_in', None)
     flash('You were logged out')
     return redirect(url_for('show_entries'))
+
+# return the total number of users inside database
+def get_total_users():
+    db = get_db()
+    cur = db.execute('select count(*) from users ')
+    total = cur.fetchone()[0]
+    return total

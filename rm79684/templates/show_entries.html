@@ -8,18 +8,62 @@
         <dt>Nome Reduzido:
         <dd><input type=text size=30 name=small_name>
         <dt>Nivel de acesso:
-        <dd><input type=text size=30 name=access_level>
+        <dd>
+          <select name="access_level">
+            <option value="visitante">Visitante</option>
+            <option value="usuario">Usuário</option>
+            <option value="administrativo">Administrativo</option>
+            <option value="tecnico">Técnico</option>
+            <option value="super-usuario">Super Usuário</option>
+            access_level
+          </select>
         <dt>Papel:
         <dd><input type=text size=30 name=role>
-        <dd><input type=submit value=Share>
+        <dd><input type=submit value=Cadastrar>
       </dl>
     </form>
   {% endif %}
-  <ul class=entries>
-  {% for entry in entries %}
-    <li><h2>{{ entry.full_name }}</h2>
-  {% else %}
-    <li><em>Unbelievable.  No entries here so far</em>
-  {% endfor %}
-  </ul>
+
+
+  <form action="{{ url_for('show_entries') }}" method=get class=search-entry>
+      <dl>
+        <dt>Buscar<input type=text size=30 name=search><input type=submit value=Buscar>
+      </dl>
+  </form>
+  <form action="{{ url_for('show_entries') }}" method=get class=search-entry><input type=hidden size=30 name=search value=""><input type=submit value="Limpar Busca"></form>
+
+
+  <form action="{{ url_for('show_entries') }}" method=get class=search-entry>
+    <select name="access_level">
+      <option value=""></option>
+      <option value="visitante">Visitante</option>
+      <option value="usuario">Usuário</option>
+      <option value="administrativo">Administrativo</option>
+      <option value="tecnico">Técnico</option>
+      <option value="super-usuario">Super Usuário</option>
+    </select>
+  <input type=submit value="Filtrar"></form>
+
+<h3>Existe um total de: {{ qtd_users }} usuários cadastrados</h3>
+
+  <table>
+    <tr>
+      <th>ID</th>
+      <th>Nome Reduzido</th>
+      <th>Nome Completo</th>
+      <th>Nível de acesso</th>
+      <th>Papel</th>
+    </tr>
+    {% for entry in entries %}
+    <tr>
+      <td>{{ entry.id }}</td>
+      <td>{{ entry.small_name }}</td>
+      <td>{{ entry.full_name }}</td>
+      <td>{{ entry.access_level }}</td>
+      <td>{{ entry.role }}</td>
+    </tr>
+    {% else %}
+      Não existe dados cadastrados até o momento!
+    {% endfor %}
+  </table>
 {% endblock %}
